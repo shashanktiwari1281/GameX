@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964837646985",
+    "project_id": "gamex-e3f39",
+    "storage_bucket": "gamex-e3f39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964837646985:android:7ae18c8693641f1da45c58",
+        "android_client_info": {
+          "package_name": "com.gamexss"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX2D69u1DkANUDwBSquMfevPNinT0c9Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="#8AE6A1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/investment_details"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/investingAmount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_between_10_100"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:autofillHints="null" />
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+    <Button
+        android:id="@+id/investBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invest"
+        android:layout_gravity="end"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp" />
+</android.widget.LinearLayout>

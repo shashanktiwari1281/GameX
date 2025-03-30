@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".noInternetActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#F31515"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noInternetAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/no_internet_animation" />
+    <Button
+        android:id="@+id/tryAgainBtnNoInternetPg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="@string/try_again"
+        android:layout_margin="30dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

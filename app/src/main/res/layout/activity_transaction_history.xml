@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".transactionHistory">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:backgroundTint="#FFA8A8"
+        android:background="@android:drawable/dialog_holo_light_frame">
+        <ImageButton
+            android:id="@+id/backBtnReferPg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#FFA8A8"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/back_button" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTxnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

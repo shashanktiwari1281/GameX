@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logInActivity"
+    android:gravity="center_vertical"
+    android:background="#EAD4D4"
+    android:paddingStart="35dp"
+    android:paddingEnd="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_verification"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/countryCode"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:gravity="end"
+            android:background="@color/white"
+            android:focusable="false"
+            android:padding="10dp"
+            android:text="@string/country_code"
+            android:inputType="none" />
+        <EditText
+            android:id="@+id/mobileNumberLogInPg"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number_here"
+            android:inputType="phone"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:autofillHints="phone" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/generateOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_otp"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/otp_here"
+        android:autofillHints="null"
+        android:inputType="numberPassword"
+        android:background="@color/white"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/continueMobileVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continueBtn"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
