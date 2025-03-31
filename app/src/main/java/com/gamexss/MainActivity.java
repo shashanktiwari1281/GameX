@@ -23,6 +23,8 @@ import android.widget.Toast;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 .collection("basicUserDetails").document("balances")
                 .get()
                 .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) totalBalanceTV.setText(String.valueOf(task.getResult().get("totalBalance")));
+                    if (task.isSuccessful()) totalBalanceTV.setText(new DecimalFormat("#.0").format(task.getResult().getDouble("totalBalance")));
                 });
         matchNo = findViewById(R.id.matchNo);
         timerMinute = findViewById(R.id.timerMinuteDig2);

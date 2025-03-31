@@ -44,7 +44,7 @@ public class txnHisRecyclerAdapter extends RecyclerView.Adapter<txnHisRecyclerAd
         holder.status.setText(String.valueOf(docs.get("status")));
         if(String.valueOf(docs.get("status")).equals("Success")) holder.status.setTextColor(Color.GREEN);
         else if(String.valueOf(docs.get("status")).equals("Failed")) holder.status.setTextColor(Color.RED);
-        else holder.status.setTextColor(Color.YELLOW);
+        else holder.status.setTextColor(Color.parseColor("#735F00"));
         holder.createdAt.setText(String.valueOf(docs.get("createdAt")));
     }
 
